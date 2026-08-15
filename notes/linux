@@ -1,3 +1,8 @@
+# FEDORA
+sudo dnf upgrade		#update
+sudo dnf install package-name	#install package
+dnf list installed package-name	#package installed?
+
 # GIT 
 git config --list	#check configuration settings (.gitconfig)
 
@@ -18,12 +23,12 @@ sudo cryptsetup close crypt
 sudo rsync -r -P source destination
 
 # LaTeX
-installed texlive-scheme-basic, 'tex(beamer.cls)', 'tex(hyperref.sty)', texlive-biblatex;
-#compile with bibliography > does not work
+installed texlive-scheme-basic, 'tex(beamer.cls)', 'tex(hyperref.sty)', texlive-biblatex, biber.noarch 2.21-4.fc44;
+#compile with bibliography 
 pdflatex document.tex
-bibtex document.aux
+biber document
 pdflatex document.tex
-pdflatex document.tex
+pdflatex document.tex ??
 
 # VIM
 :echo has('clipboard')	#clipboard enabled? 0
@@ -42,4 +47,3 @@ pactl set-card-profile alsa_card.pci-0000_00_1f.3 output:hdmi-stereo
 
 
 
-<BS>
