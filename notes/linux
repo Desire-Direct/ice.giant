@@ -28,7 +28,6 @@ installed texlive-scheme-basic, 'tex(beamer.cls)', 'tex(hyperref.sty)', texlive-
 pdflatex document.tex
 biber document
 pdflatex document.tex
-pdflatex document.tex ??
 
 # VIM
 :echo has('clipboard')	#clipboard enabled? 0
