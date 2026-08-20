@@ -1,19 +1,18 @@
 # FEDORA
+sudo -i 			#switch to root
 sudo dnf upgrade		#update
 sudo dnf install package-name	#install package
 dnf list installed package-name	#package installed?
+# user permissions
+ls -l	#display permissions
+sudo chown -R username:usergroup directory	#change permission for dir and contents
 
 # GIT 
 git config --list	#check configuration settings (.gitconfig)
 
-#user permissions
-ls -l	#display permissions
-sudo chown -R username:usergroup directory	#change permission for dir and contents
-
 # mount encrypted partition
 sudo cryptsetup --type luks open /dev/sdX crypt
 sudo mount -t ext4 /dev/mapper/crypt /mnt/myusb
-
 # unmount encrypted partition
 sudo umount /mnt/myusb
 sudo cryptsetup close crypt
@@ -43,6 +42,8 @@ pactl list cards
 #this is not temporary!?:
 pactl set-card-profile alsa_card.pci-0000_00_1f.3 output:hdmi-stereo
 
-
+# WEB SERVER
+config /load modules in /etc/httpd/conf.d;
+opened firewall;
 
 
