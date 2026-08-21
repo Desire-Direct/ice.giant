@@ -43,8 +43,9 @@ pactl list cards
 pactl set-card-profile alsa_card.pci-0000_00_1f.3 output:hdmi-stereo
 
 # LAMP 
-config in /etc/httpd/conf.d;
 opened firewall;
+config in /etc/httpd/conf.d;
+mod_ssl installed; but properly configured??
 
 # GIT 
 git config --list	#check configuration settings (.gitconfig)
