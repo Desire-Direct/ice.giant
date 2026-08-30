@@ -3,6 +3,7 @@ sudo -i 			#switch to root
 sudo dnf upgrade		#update
 sudo dnf install package-name	#install package
 dnf list installed package-name	#package installed?
+esc+fn				#disable /enable fn function
 # user permissions
 ls -l	#display permissions
 sudo chown -R username:usergroup directory	#change permission for dir and contents
@@ -16,6 +17,11 @@ sudo cryptsetup close crypt
 
 # recording desktop with audio
 ffmpeg -video_size 1920x1080 -framerate 25 -f x11grab -i :0.0 -f alsa -ac 2 -i hw:1 cybergoth.mp4
+# recording external WEBCAM
+install v4l-utils; v4l2-ctl --list-devices > /dev/video2
+# for audio only
+arecord -l > card 2,0
+/dev/snd/by-id > usb-Sunplus_IT_Co_HD_720P_webcam_AN20200706001-02
 
 # solve problem "No video with supported format and MIME type found." in firefox
 # tried https://docs.fedoraproject.org/en-US/quick-docs/installing-plugins-for-playing-movies-and-music/
@@ -56,6 +62,7 @@ httpd installed and enabled -> test page works /etc/httpd/conf.d/welcome.conf;
 host="localhost" or "127.0.0.1" (my machine)
 do not open firewall ports unless inviting other hosts!?
 
-
+# CMUS
+:a ~/Music	#adds all music to lib
 
 
