@@ -70,5 +70,6 @@ M (grey bar)		#play playlist
 tab+up/down arrows	#switch between albums
 
 # PURE DATA
-install > flatpak install flathub info.puredata.Pd.flatpakref;
+install > flatpak install info.puredata.Pd.flatpakref;
 run > flatpak run info.puredata.Pd
+ALSA ERROR!!!
