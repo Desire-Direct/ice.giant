@@ -65,4 +65,6 @@ do not open firewall ports unless inviting other hosts!?
 # CMUS
 :a ~/Music	#adds all music to lib
 
-
+# PURE DATA
+install > flatpak install flathub info.puredata.Pd.flatpakref;
+run > flatpak run info.puredata.Pd
