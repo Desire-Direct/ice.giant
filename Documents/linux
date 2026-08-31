@@ -69,4 +69,6 @@ b, z			#next, previous (CAPTION next/prev album)
 M (grey bar)		#play playlist
 tab+up/down arrows	#switch between albums
 
-
+# PURE DATA
+install > flatpak install flathub info.puredata.Pd.flatpakref;
+run > flatpak run info.puredata.Pd
