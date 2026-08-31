@@ -63,6 +63,10 @@ host="localhost" or "127.0.0.1" (my machine)
 do not open firewall ports unless inviting other hosts!?
 
 # CMUS
-:a ~/Music	#adds all music to lib
+:a ~/Music		#adds all music to lib
+x, c, v			#play, pause, stop
+b, z			#next, previous (CAPTION next/prev album)
+M (grey bar)		#play playlist
+tab+up/down arrows	#switch between albums
 
 
